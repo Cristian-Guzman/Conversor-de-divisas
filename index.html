@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub&display=swap" rel="stylesheet">
+    <title>Conversor de divisas</title>
+</head>
+<body>
+<div class="pantalla">
+    <div class="bloque">
+        <div class="bloque__imagen">
+            <img src="images/Logo.PNG" alt="Logo">
+        </div> <!-- .bloque__imagen -->
+        <div class="bloque__input">
+            <input type="text" placeholder="Cantidad de dinero:">
+        </div> <!-- .bloque__input -->
+        <div class="bloque__conversion">
+            <div class="bloque__left">
+                <select name="cars" id="cars" class="boton">
+                    <option disabled selected>Elige tu moneda</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+
+                <select name="cars" id="cars" class="boton">
+                    <option disabled selected>Elige tu moneda</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+            <div class="bloque__right">
+                <input type="submit" value="Convertir" class="boton--verde">
+            </div>
+        </div> <!-- .bloque__conversion -->
+    </div>
+</div> <!-- .pantalla -->
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

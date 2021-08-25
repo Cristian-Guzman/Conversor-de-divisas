@@ -1,0 +1,101 @@
+$fondoVentana : #c4c4c4;
+$fondo : #e1e1e1;
+$boton : #8cbc6c;
+$alertaBoton : #fbb4a3;
+$blanco : #fff;
+$negro : #000;
+$borde :  #b4bfcc;
+$fondoBoton : #dddddd;
+$fuentePrincipal : 'Krub', sans-serif;
+
+body {
+    background-color: $fondo;
+}
+
+.pantalla {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloque {
+    background-color: $fondoVentana;
+    width: 800px;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+
+    &__imagen{
+        justify-content: center;
+        text-align: center;
+    }
+    &__input {
+        display: inline;
+        
+        input {
+            width: 500px;
+            height: 1.8rem;
+            font-family: $fuentePrincipal;
+            color: $negro;
+            border-top-color: $borde;
+            border-left-color: $borde;
+            text-align: center;
+            border-radius: 5px;
+            background-color: $fondoBoton;
+        }
+        ::placeholder {
+            color: $negro;
+            font-weight: bold;
+        }
+    }
+    &__conversion {
+        display: flex;
+        gap: 2rem;
+        font-family: $fuentePrincipal;
+        margin-bottom: 50px;
+
+        select {
+            width: 250px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+            font-weight: bold;
+        }
+        option {
+            font-weight: bold;
+        }
+    }
+    
+}
+
+.boton {
+    cursor: pointer;
+    padding: 10px 60px;
+    background-color: $fondoBoton;
+    border-radius: 5px;
+    color: $negro;
+    border-top-color: $borde;
+    border-left-color: $borde;
+    &:focus {
+        border: 1px solid #65afc7;
+    }
+}
+.boton--verde {
+    cursor: pointer;
+    padding: 10px 60px;
+    background-color: $boton;
+    border-radius: 5px;
+    color: $blanco;
+    border-color: $borde;
+    font-weight: 700;
+    &:hover {
+        border-color: $borde;
+    }
+}

@@ -1,0 +1,131 @@
+body {
+  background-color: #e1e1e1;
+}
+
+.pantalla {
+  width: 100vw;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bloque {
+  background-color: #c4c4c4;
+  width: 800px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+}
+
+.bloque__imagen {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.bloque__input {
+  display: inline;
+}
+
+.bloque__input input {
+  width: 500px;
+  height: 1.8rem;
+  font-family: "Krub", sans-serif;
+  color: #000;
+  border-top-color: #b4bfcc;
+  border-left-color: #b4bfcc;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #dddddd;
+}
+
+.bloque__input ::-webkit-input-placeholder {
+  color: #000;
+  font-weight: bold;
+}
+
+.bloque__input :-ms-input-placeholder {
+  color: #000;
+  font-weight: bold;
+}
+
+.bloque__input ::-ms-input-placeholder {
+  color: #000;
+  font-weight: bold;
+}
+
+.bloque__input ::placeholder {
+  color: #000;
+  font-weight: bold;
+}
+
+.bloque__conversion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  font-family: "Krub", sans-serif;
+  margin-bottom: 50px;
+}
+
+.bloque__conversion select {
+  width: 250px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  font-weight: bold;
+}
+
+.bloque__conversion option {
+  font-weight: bold;
+}
+
+.boton {
+  cursor: pointer;
+  padding: 10px 60px;
+  background-color: #dddddd;
+  border-radius: 5px;
+  color: #000;
+  border-top-color: #b4bfcc;
+  border-left-color: #b4bfcc;
+}
+
+.boton:focus {
+  border: 1px solid #65afc7;
+}
+
+.boton--verde {
+  cursor: pointer;
+  padding: 10px 60px;
+  background-color: #8cbc6c;
+  border-radius: 5px;
+  color: #fff;
+  border-color: #b4bfcc;
+  font-weight: 700;
+}
+
+.boton--verde:hover {
+  border-color: #b4bfcc;
+}
+/*# sourceMappingURL=styles.css.map */
