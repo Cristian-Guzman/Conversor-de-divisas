@@ -72,7 +72,10 @@ body {
             font-weight: bold;
         }
     }
-    
+    &__left {
+        display: flex;
+        gap: 12px;
+    }
 }
 
 .boton {
@@ -83,7 +86,8 @@ body {
     color: $negro;
     border-top-color: $borde;
     border-left-color: $borde;
-    &:focus {
+    border: 1px solid #65afc7;
+    &:active {
         border: 1px solid #65afc7;
     }
 }
@@ -98,4 +102,18 @@ body {
     &:hover {
         border-color: $borde;
     }
+}
+
+.alerta {
+
+    width: 80%;
+    padding: 10px 60px;
+    background-color: $alertaBoton;
+    border-radius: 10px;
+    color: $blanco;
+    border-top-color: $borde;
+    border-left-color: $borde;
+    margin-top: -70px;
+    border: 1px solid #65afc7;
+    text-align: center;
 }

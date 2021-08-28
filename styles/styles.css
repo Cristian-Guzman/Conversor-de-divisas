@@ -101,6 +101,13 @@ body {
   font-weight: bold;
 }
 
+.bloque__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+
 .boton {
   cursor: pointer;
   padding: 10px 60px;
@@ -109,9 +116,10 @@ body {
   color: #000;
   border-top-color: #b4bfcc;
   border-left-color: #b4bfcc;
+  border: 1px solid #65afc7;
 }
 
-.boton:focus {
+.boton:active {
   border: 1px solid #65afc7;
 }
 
@@ -127,5 +135,18 @@ body {
 
 .boton--verde:hover {
   border-color: #b4bfcc;
+}
+
+.alerta {
+  width: 80%;
+  padding: 10px 60px;
+  background-color: #fbb4a3;
+  border-radius: 10px;
+  color: #fff;
+  border-top-color: #b4bfcc;
+  border-left-color: #b4bfcc;
+  margin-top: -70px;
+  border: 1px solid #65afc7;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
